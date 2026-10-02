@@ -22,8 +22,8 @@ import (
 const (
 	workers          = 10             // параллельных воркеров
 	threadsPerWorker = 1000           // потоков на каждый воркер (итого 10,000)
-	checkTimeout     = 8 * time.Second
-	checkSite        = "https://www.google.com"
+	checkTimeout     = 10 * time.Second
+	checkSite        = "http://ip-api.com/json"
 	output           = "valid.txt"
 )
 
@@ -78,6 +78,17 @@ var sources = []Source{
 	{"vakhov",             "https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/socks5.txt", fmtText},
 	{"ProxyScrape-repo",   "https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/socks5.txt", fmtText},
 	{"jetkai",             "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt", fmtText},
+	// — ещё источники —
+	{"monosans_noauth",   "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/without-auth/socks5.txt", fmtText},
+	{"ShiftyTR",          "https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt", fmtText},
+	{"caliphdev",         "https://raw.githubusercontent.com/caliphdev/Proxy-List/master/http.txt", fmtText},
+	{"mmpx12",            "https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks5.txt", fmtText},
+	{"officialputuid",    "https://raw.githubusercontent.com/officialputuid/KangProxy/KangProxy/socks5/socks5.txt", fmtText},
+	{"clarketm",          "https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt", fmtText},
+	{"BlackSnowDot",      "https://raw.githubusercontent.com/BlackSnowDot/proxylist-update-every-minute/main/socks5.txt", fmtText},
+	{"spys.me",           "https://spys.me/socks.txt", fmtText},
+	{"proxy-list.dl",     "https://www.proxy-list.download/api/v1/get?type=socks5", fmtText},
+	{"spys.one",          "https://spys.one/en/socks-proxy-list/", fmtHTML},
 }
 
 type GeonodeResp struct {
