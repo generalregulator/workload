@@ -68,6 +68,16 @@ var sources = []Source{
 	{"z3a4",                "https://raw.githubusercontent.com/z3a4/free-proxy-list/refs/heads/main/proxies/checked/protocols/socks5/socks5-proxies.txt", fmtText},
 	{"zloi-user",           "https://raw.githubusercontent.com/zloi-user/hideip.me/refs/heads/main/socks5.txt", fmtText},
 	{"socks-proxy.net",     "https://socks-proxy.net/", fmtHTML},
+	// — новые источники —
+	{"monosans",           "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt", fmtText},
+	{"proxyscrape_v4",     "https://api.proxyscrape.com/v4/free-proxy-list/get?request=display_proxies&proxy_format=protocolipport&format=text&proxy_type=socks5", fmtText},
+	{"gfpcom",             "https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/socks5.txt", fmtText},
+	{"VPSLabCloud",        "https://raw.githubusercontent.com/VPSLabCloud/VPSLab-Free-Proxy-List/main/socks5_all.txt", fmtText},
+	{"proxygenerator1",    "https://raw.githubusercontent.com/proxygenerator1/ProxyGenerator/main/Stable/socks5.txt", fmtText},
+	{"SoliSpirit",         "https://raw.githubusercontent.com/SoliSpirit/proxy-list/main/socks5.txt", fmtText},
+	{"vakhov",             "https://raw.githubusercontent.com/vakhov/fresh-proxy-list/master/socks5.txt", fmtText},
+	{"ProxyScrape-repo",   "https://raw.githubusercontent.com/ProxyScrape/free-proxy-list/main/socks5.txt", fmtText},
+	{"jetkai",             "https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt", fmtText},
 }
 
 type GeonodeResp struct {
